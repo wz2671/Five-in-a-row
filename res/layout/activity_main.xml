@@ -1,0 +1,46 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackground"
+    tools:context="com.example.androidfivechess.MainActivity" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="150dp"
+        android:textSize="50dp"
+        android:textColor="#696969"
+        android:text="五子棋" />
+
+    <Button
+        android:id="@+id/setGame"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/endGame"
+        android:layout_alignBottom="@+id/endGame"
+        android:layout_toLeftOf="@+id/endGame"
+        android:text="设置" />
+
+    <Button
+        android:id="@+id/startGame"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/setGame"
+        android:layout_alignBottom="@+id/setGame"
+        android:layout_toLeftOf="@+id/setGame"
+        android:text="开始" />
+
+    <Button
+        android:id="@+id/endGame"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="143dp"
+        android:text="结束" />
+    
+</RelativeLayout>

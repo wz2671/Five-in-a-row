@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp"
+    android:paddingBottom="10dp" >
+
+    <RadioGroup
+        android:id="@+id/modeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/doubleMode"
+            style="@style/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@xml/radiobutton"
+            android:checked="true"
+            android:text="双人游戏" />
+
+        <RadioButton
+            android:id="@+id/singleMode"
+            style="@style/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@xml/radiobutton"
+            android:text="单人游戏" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/turnGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp" >
+
+        <RadioButton
+            android:id="@+id/playerFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            style="@style/body"
+            android:button="@xml/radiobutton"
+            android:text="玩家先手" />
+
+        <RadioButton
+            android:id="@+id/computerFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/body"
+            android:enabled="false"
+            android:button="@xml/radiobutton"
+            android:text="电脑先手" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/modeConfirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/title"
+        android:text="开始游戏" />
+
+</LinearLayout>
